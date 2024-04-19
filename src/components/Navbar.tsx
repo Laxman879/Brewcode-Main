@@ -20,15 +20,20 @@ function Header() {
   };
 
   return (
-    <Navbar expand="lg" bg="dark" variant="dark" className="navbar">
+    <Navbar
+      expand="lg"
+      bg="dark"
+      variant="dark"
+      className="navbar navbar-expand-lg sticky-top"
+    >
       <Container>
         <Navbar.Brand>
           <Link href="/">
             <Image
               src="/images/brewcode-logo.png"
               alt="Brewcode logo"
-              width={40}
-              height={30}
+              width={30}
+              height={25}
               className="logo"
             />
           </Link>
@@ -146,10 +151,6 @@ function Header() {
                               Communication & Modie
                             </a>
                           </p>
-                        </div>
-                      </div>
-                      <div className="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
-                        <div className="mt-5 padding-top">
                           <p>
                             <a className="list-group-item" href="#">
                               Health
